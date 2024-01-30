@@ -1,0 +1,4 @@
+SELECT        project_id AS [Project ID], employee_id AS [Employee ID], position_code AS [Position Code], legacy_code AS [Employee HR Code], supervisor_id AS [Manager ID], date_of_join AS [Date of Joining], 
+                         date_of_resign AS [Date Of Resign], CAST(visit_date AS datetime) AS [Visit Date], parinaam_attendance AS [Parinaam Attendance], hr_attendance AS [Final HR Attendance], field_team_attendance AS [Field Team Attendance], 
+                         remarks AS 'Remarks', CAST(project_id AS VARCHAR) + '_' + CAST(employee_id AS VARCHAR) AS Project_EmpID
+FROM            dbo.Attendance
