@@ -1,0 +1,5 @@
+SELECT        project_id AS [Project ID], store_id AS [Store ID], employee_id AS [Employee ID], CAST(visit_date AS datetime) AS [Visit Date], supervisor_id AS [Supervisor ID], channel_id AS [Channel ID], chain_id AS [Chain ID], 
+                         storetype_id AS [Store Type ID], promo_definition_id AS [Promo Definitaion ID], promo_definition_name AS [Promo Definition Name], promotion_deatils_id AS [Promotion Details ID], promotion_deatils AS [Promotion Details], 
+                         promotion_value_id AS [Promotion Value ID], promotion_value_name AS [Promotion Value Name], promotion_type AS [Promotion Type], present AS Present, reason AS Reason, stock AS Stock, pop AS POP, running AS Running, 
+                         backing_sheet AS [Backing Sheet], promotion_status AS [Promotion Status], actual_price AS [Actual Price], offer_price AS [Offer Price], image1 AS [Image 1], image2 AS [Image 2]
+FROM            dbo.Promotion
